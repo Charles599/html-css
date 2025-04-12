@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>sign up!</title>
 </head>
 <body>
     <form action="signup">
         <div> 
-            <input type="text" name="id" id="id" placeholder="아이디" required> @naver.com <br>
+            <input type="text" name="id" id="id" placeholder="아이디" required><span>@naver.com</span><br>
             <input type="password" name="pw" id="pw" placeholder="비밀번호" required> <br>
             <input type="text" name="email" id="email" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)">
         </div>
@@ -26,14 +27,14 @@
                 <option>LG U+ 알뜰폰</option>
             </select>
             <br><br>
-            <input type="radio" name="gender" id="gender" required>남자
-            <input type="radio" name="gender" id="gender">여자&emsp;
-            <input type="radio" name="nat" id="nat" checked>내국인
-            <input type="radio" name="nat" id="nat">외국인 <br>
+            <input type="radio" name="gender" id="gender" required>&emsp;남자
+            <input type="radio" name="gender" id="gender">&emsp;여자
+            <input type="radio" name="nat" id="nat" checked required>&emsp;내국인
+            <input type="radio" name="nat" id="nat">&emsp;외국인 <br>
             <input type="text" name="num" id="num" placeholder="휴대전화번호" required>
         </div>
         <br>
-        <button type="submit">인증요청</button>
+        <button type="submit" id="submit">인증요청</button>
     </form>
 </body>
 </html>

@@ -1,0 +1,33 @@
+div{
+    width: 330px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+div span{
+    position: absolute;
+    left: 230px;
+}
+
+input{
+    position: relative;
+    left: 5%;
+    border: 0px;
+    border-radius: 10px;
+}
+input[type="password"],
+input[type="text"]{
+    width: 90%;
+}
+
+select{
+    position: relative;
+    border: 0px;
+    left: 5%;
+    width: 90%;
+}
+
+button#submit{
+    width: 330px;
+    color: white;
+    background: green;
+}
