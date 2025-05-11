@@ -1,12 +1,16 @@
-let wrap = document.createElement('div');
-wrap.id = 'wrap';
+import axios from 'axios';
 
-wrap.innerHTML = `
-username<br>
-<input type="text" name="id" id="id" placeholder="아이디"><br>
-password<br>
-<input type="text" name="pw" id="pw" placeholder="비밀번호"><br>
-<button type="submit" id="submit">submit</button>
-`
+async function getData(){
+    let res = await axios.get('https://dummyjson.com/todos');
+    return res.data;
+}
 
-document.body.appendChild(wrap);
+async function render() {
+    let data = await getData();
+    let wrap = document.createElement('div');
+    wrap.id = 'wrap';
+    wrap.innerHTML = `data: ${JSON.stringify(data)}`;
+    document.body.appendChild(wrap);
+}
+
+render();
