@@ -1,3 +1,4 @@
+/*
 import axios from 'axios';
 
 async function getData(){
@@ -14,3 +15,4 @@ async function render() {
 }
 
 render();
+*/
